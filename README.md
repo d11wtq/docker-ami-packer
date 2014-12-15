@@ -4,7 +4,7 @@ This is a very minimal AMI that has Docker installed, on Ubuntu (HVM).
 
 It uses the official Ubuntu Docker (lxc-docker) packages.
 
-> ami-139ef629
+> Public: ami-9392faa9
 
 ## Usage
 
@@ -18,4 +18,4 @@ Packer, then:
       -var aws_secret_key=$AWS_SECRET_ACCESS_KEY \
       docker-ami.json
 
-This will chew for a bit and finally output the ami-ID.
+This will chew for a bit and finally output the AMI ID.

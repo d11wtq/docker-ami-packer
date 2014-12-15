@@ -15,6 +15,5 @@ apt-get -y install \
   lxc-docker-$DOCKER_VERSION \
   linux-image-extra-$(uname -r)
 
-groupadd docker
 usermod -aG docker ubuntu
 EOF
