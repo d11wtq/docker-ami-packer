@@ -9,6 +9,8 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 \
 echo 'deb http://get.docker.io/ubuntu docker main' \
   > /etc/apt/sources.list.d/docker.list
 
+export DEBIAN_FRONTEND
+
 apt-get -y update && apt-get -y upgrade
 
 apt-get -y install \
