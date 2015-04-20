@@ -5,8 +5,8 @@
     "aws_access_key": "",
     "aws_secret_key": "",
     "aws_region": "",
-    "docker_version": "",
-    "source_ami": "ami-1711732d",
+    "docker_version": "1.6.0",
+    "source_ami": "",
     "instance_type": "t2.micro"
   },
 
@@ -24,8 +24,7 @@
   "provisioners": [{
     "type": "shell",
     "environment_vars": [
-      "DEBIAN_FRONTEND=noninteractive",
-      "DOCKER_VERSION={{user `docker_version`}}"
+      "docker_version={{user `docker_version`}}"
     ],
     "scripts": ["provision.sh"]
   }]
